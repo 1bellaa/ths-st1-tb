@@ -1,0 +1,123 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=20250722
+##source=freeBayes v1.3.6
+##reference=/home/tbuser/miniconda3/envs/tbprofiler/share/tbprofiler/tbdb.fasta
+##contig=<ID=Chromosome,length=4411532>
+##phasing=none
+##commandline="freebayes -f /home/tbuser/miniconda3/envs/tbprofiler/share/tbprofiler/tbdb.fasta -r Chromosome:1-1524 --haplotype-length -1 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1_1524.tmp.bam"
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth at the locus">
+##INFO=<ID=DPB,Number=1,Type=Float,Description="Total read depth per bp at the locus; bases in reads overlapping / bases in haplotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Total number of alternate alleles in called genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1]">
+##INFO=<ID=RO,Number=1,Type=Integer,Description="Count of full observations of the reference haplotype.">
+##INFO=<ID=AO,Number=A,Type=Integer,Description="Count of full observations of this alternate haplotype.">
+##INFO=<ID=PRO,Number=1,Type=Float,Description="Reference allele observation count, with partial observations recorded fractionally">
+##INFO=<ID=PAO,Number=A,Type=Float,Description="Alternate allele observations, with partial observations recorded fractionally">
+##INFO=<ID=QR,Number=1,Type=Integer,Description="Reference allele quality sum in phred">
+##INFO=<ID=QA,Number=A,Type=Integer,Description="Alternate allele quality sum in phred">
+##INFO=<ID=PQR,Number=1,Type=Float,Description="Reference allele quality sum in phred for partial observations">
+##INFO=<ID=PQA,Number=A,Type=Float,Description="Alternate allele quality sum in phred for partial observations">
+##INFO=<ID=SRF,Number=1,Type=Integer,Description="Number of reference observations on the forward strand">
+##INFO=<ID=SRR,Number=1,Type=Integer,Description="Number of reference observations on the reverse strand">
+##INFO=<ID=SAF,Number=A,Type=Integer,Description="Number of alternate observations on the forward strand">
+##INFO=<ID=SAR,Number=A,Type=Integer,Description="Number of alternate observations on the reverse strand">
+##INFO=<ID=SRP,Number=1,Type=Float,Description="Strand balance probability for the reference allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SRF and SRR given E(SRF/SRR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=SAP,Number=A,Type=Float,Description="Strand balance probability for the alternate allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SAF and SAR given E(SAF/SAR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=AB,Number=A,Type=Float,Description="Allele balance at heterozygous sites: a number between 0 and 1 representing the ratio of reads showing the reference allele to all reads, considering only reads from individuals called as heterozygous">
+##INFO=<ID=ABP,Number=A,Type=Float,Description="Allele balance probability at heterozygous sites: Phred-scaled upper-bounds estimate of the probability of observing the deviation between ABR and ABA given E(ABR/ABA) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RUN,Number=A,Type=Integer,Description="Run length: the number of consecutive repeats of the alternate allele in the reference genome">
+##INFO=<ID=RPP,Number=A,Type=Float,Description="Read Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RPPR,Number=1,Type=Float,Description="Read Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=RPL,Number=A,Type=Float,Description="Reads Placed Left: number of reads supporting the alternate balanced to the left (5') of the alternate allele">
+##INFO=<ID=RPR,Number=A,Type=Float,Description="Reads Placed Right: number of reads supporting the alternate balanced to the right (3') of the alternate allele">
+##INFO=<ID=EPP,Number=A,Type=Float,Description="End Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=EPPR,Number=1,Type=Float,Description="End Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+##INFO=<ID=DPRA,Number=A,Type=Float,Description="Alternate allele depth ratio.  Ratio between depth in samples with each called alternate allele and those without.">
+##INFO=<ID=ODDS,Number=1,Type=Float,Description="The log odds ratio of the best genotype combination to the second-best.">
+##INFO=<ID=GTI,Number=1,Type=Integer,Description="Number of genotyping iterations required to reach convergence or bailout.">
+##INFO=<ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+##INFO=<ID=CIGAR,Number=A,Type=String,Description="The extended CIGAR representation of each alternate allele, with the exception that '=' is replaced by 'M' to ease VCF parsing.  Note that INDEL alleles do not have the first matched base (which is provided by default, per the spec) referred to by the CIGAR.">
+##INFO=<ID=NUMALT,Number=1,Type=Integer,Description="Number of unique non-reference alleles in called genotypes at this position.">
+##INFO=<ID=MEANALT,Number=A,Type=Float,Description="Mean number of unique non-reference allele observations per sample with the corresponding alternate alleles.">
+##INFO=<ID=LEN,Number=A,Type=Integer,Description="allele length">
+##INFO=<ID=MQM,Number=A,Type=Float,Description="Mean mapping quality of observed alternate alleles">
+##INFO=<ID=MQMR,Number=1,Type=Float,Description="Mean mapping quality of observed reference alleles">
+##INFO=<ID=PAIRED,Number=A,Type=Float,Description="Proportion of observed alternate alleles which are supported by properly paired read fragments">
+##INFO=<ID=PAIREDR,Number=1,Type=Float,Description="Proportion of observed reference alleles which are supported by properly paired read fragments">
+##INFO=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum depth in gVCF output block.">
+##INFO=<ID=END,Number=1,Type=Integer,Description="Last position (inclusive) in gVCF output record.">
+##INFO=<ID=technology.illumina,Number=A,Type=Float,Description="Fraction of observations supporting the alternate observed in reads from illumina">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Float,Description="Genotype Quality, the Phred-scaled marginal (or unconditional) probability of the called genotype">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Number of observation for each allele">
+##FORMAT=<ID=RO,Number=1,Type=Integer,Description="Reference allele observation count">
+##FORMAT=<ID=QR,Number=1,Type=Integer,Description="Sum of quality of the reference observations">
+##FORMAT=<ID=AO,Number=A,Type=Integer,Description="Alternate allele observation count">
+##FORMAT=<ID=QA,Number=A,Type=Integer,Description="Sum of quality of the alternate observations">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum depth in gVCF output block.">
+##bcftools_normVersion=1.21+htslib-1.21
+##bcftools_normCommand=norm -f /home/tbuser/miniconda3/envs/tbprofiler/share/tbprofiler/tbdb.fasta -Oz -o 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1_1524.vcf.gz; Date=Tue Jul 22 21:41:05 2025
+##bcftools_concatVersion=1.21+htslib-1.21
+##bcftools_concatCommand=concat -aD 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1_1524.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4933_7267.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_7068_9818.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_13133_13911.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_490545_491793.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_574479_576790.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_619500_620865.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_656010_657739.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_731680_732406.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_733853_734970.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_737268_738349.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_759342_763325.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_763127_767320.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_775586_778680.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_778477_779624.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_778790_779487.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_781126_781934.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_800106_801462.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1253074_1254783.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1302606_1305501.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1364162_1365186.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1406081_1407604.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1416181_1418048.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1460802_1461290.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1471498_1473382.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1473408_1476795.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1673148_1675011.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1833247_1834987.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1853358_1854388.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_1917506_1918746.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2062809_2065010.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2101651_2103337.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2153889_2156842.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2167649_2170934.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2221719_2223825.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2288681_2290323.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2517915_2519365.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2714124_2715832.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2725899_2726780.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2746135_2747798.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2782366_2786169.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2859300_2860640.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2986639_2987615.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2995772_2996737.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_2996539_2998055.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3064515_3067372.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3067193_3068161.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3073680_3074671.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3086620_3087935.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3338868_3339762.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3448253_3449991.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3568401_3569280.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3611959_3613847.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3623159_3625110.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3624910_3626860.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3626663_3627924.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3640207_3641538.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3641335_3642881.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3840194_3841620.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3877464_3879240.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_3986612_3987299.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4038158_4041013.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4043862_4046428.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4138202_4140002.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4237683_4243147.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4242947_4246517.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4246314_4249810.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4266953_4269124.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4268925_4270084.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4326004_4330174.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4327328_4328199.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4338171_4338961.vcf.gz 6cbace0b-2da0-4bca-85a8-d84e2e0ccfe8.Chromosome_4407528_4408481.vcf.gz; Date=Tue Jul 22 21:41:28 2025
+##bcftools_viewVersion=1.21+htslib-1.21
+##bcftools_viewCommand=view -Oz -o /mnt/c/Users/Lenovo/Downloads/ths-st1-tb/tmp/3f1a4a2f-09ed-4dfa-9e90-eb6e80dda773.short_variants.targets.vcf.gz; Date=Tue Jul 22 21:41:28 2025
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=BND,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=LowQual,Description="Poor quality and insufficient number of PEs and SRs.">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="PE confidence interval around END">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="PE confidence interval around POS">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for POS2 coordinate in case of an inter-chromosomal translocation">
+##INFO=<ID=POS2,Number=1,Type=Integer,Description="Genomic position for CHR2 in case of an inter-chromosomal translocation">
+##INFO=<ID=PE,Number=1,Type=Integer,Description="Paired-end support of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=SRMAPQ,Number=1,Type=Integer,Description="Median mapping quality of split-reads">
+##INFO=<ID=SR,Number=1,Type=Integer,Description="Split-read support">
+##INFO=<ID=SRQ,Number=1,Type=Float,Description="Split-read consensus alignment quality">
+##INFO=<ID=CONSENSUS,Number=1,Type=String,Description="Split-read consensus sequence">
+##INFO=<ID=CONSBP,Number=1,Type=Integer,Description="Consensus SV breakpoint position">
+##INFO=<ID=CE,Number=1,Type=Float,Description="Consensus sequence entropy">
+##INFO=<ID=CT,Number=1,Type=String,Description="Paired-end signature induced connection type">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Insertion length for SVTYPE=INS.">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=INSLEN,Number=1,Type=Integer,Description="Predicted length of the insertion">
+##INFO=<ID=HOMLEN,Number=1,Type=Integer,Description="Predicted microhomology length using a max. edit distance of 2">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Per-sample genotype filter">
+##FORMAT=<ID=RC,Number=1,Type=Integer,Description="Raw high-quality read counts or base counts for the SV">
+##FORMAT=<ID=RCL,Number=1,Type=Integer,Description="Raw high-quality read counts or base counts for the left control region">
+##FORMAT=<ID=RCR,Number=1,Type=Integer,Description="Raw high-quality read counts or base counts for the right control region">
+##FORMAT=<ID=RDCN,Number=1,Type=Integer,Description="Read-depth based copy-number estimate for autosomal sites">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference pairs">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant pairs">
+##FORMAT=<ID=RR,Number=1,Type=Integer,Description="# high-quality reference junction reads">
+##FORMAT=<ID=RV,Number=1,Type=Integer,Description="# high-quality variant junction reads">
+##bcftools_concatCommand=concat /mnt/c/Users/Lenovo/Downloads/ths-st1-tb/tmp/3f1a4a2f-09ed-4dfa-9e90-eb6e80dda773.short_variants.targets.vcf.gz /mnt/c/Users/Lenovo/Downloads/ths-st1-tb/tmp/3f1a4a2f-09ed-4dfa-9e90-eb6e80dda773.delly.targets.vcf.gz; Date=Tue Jul 22 21:42:12 2025
+##bcftools_viewCommand=view -v snps -o snp_only/SRR6397445_snps_only.vcf --output-type v vcf/SRR6397445.targets.vcf.gz; Date=Tue Jul 22 21:43:13 2025
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SRR6397445
+Chromosome	408	.	C	A	4834.46	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=149;CIGAR=1X;DP=149;DPB=149;DPRA=0;EPP=3.02487;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=211.163;PAIRED=1;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5411;QR=0;RO=0;RPL=72;RPP=3.37464;RPPR=0;RPR=77;RUN=1;SAF=75;SAP=3.02487;SAR=74;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:149:0,149:0:0:149:5411:-487.041,-44.8535,0
+Chromosome	1272	.	C	T	4109.75	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=126;CIGAR=1X;DP=126;DPB=126;DPRA=0;EPP=4.11327;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=179.278;PAIRED=0.992063;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4609;QR=0;RO=0;RPL=65;RPP=3.28604;RPPR=0;RPR=61;RUN=1;SAF=70;SAP=6.38815;SAR=56;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:126:0,126:0:0:126:4609:-414.895,-37.9298,0
+Chromosome	7362	.	G	C	4982.82	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=150;CIGAR=1X;DP=150;DPB=150;DPRA=0;EPP=3.24192;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=212.549;PAIRED=0.973333;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5589;QR=0;RO=0;RPL=89;RPP=14.3599;RPPR=0;RPR=61;RUN=1;SAF=72;SAP=3.53145;SAR=78;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:150:0,150:0:0:150:5589:-503.051,-45.1545,0
+Chromosome	8353	.	G	C	4248.18	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=129;CIGAR=1X;DP=130;DPB=130;DPRA=0;EPP=3.43113;EPPR=5.18177;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=174.899;PAIRED=0.984496;PAIREDR=1;PAO=0;PQA=0;PQR=0;PRO=0;QA=4784;QR=31;RO=1;RPL=68;RPP=3.83512;RPPR=5.18177;RPR=61;RUN=1;SAF=67;SAP=3.43113;SAR=62;SRF=1;SRP=5.18177;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:130:1,129:1:31:129:4784:-427.543,-36.0344,0
+Chromosome	738278	.	A	G	3874.05	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=120;CIGAR=1X;DP=120;DPB=120;DPRA=0;EPP=5.61607;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=170.96;PAIRED=0.966667;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4360;QR=0;RO=0;RPL=50;RPP=10.2485;RPPR=0;RPR=70;RUN=1;SAF=70;SAP=10.2485;SAR=50;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:120:0,120:0:0:120:4360:-392.521,-36.1236,0
+Chromosome	775639	.	T	C	4041.51	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=123;CIGAR=1X;DP=123;DPB=123;DPRA=0;EPP=3.45166;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=175.119;PAIRED=1;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4528;QR=0;RO=0;RPL=62;RPP=3.02795;RPPR=0;RPR=61;RUN=1;SAF=61;SAP=3.02795;SAR=62;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:123:0,123:0:0:123:4528:-407.63,-37.0267,0
+Chromosome	775700	.	C	A	3785.22	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=117;CIGAR=1X;DP=117;DPB=117;DPRA=0;EPP=4.51363;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=166.802;PAIRED=1;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4244;QR=0;RO=0;RPL=60;RPP=3.17734;RPPR=0;RPR=57;RUN=1;SAF=59;SAP=3.02886;SAR=58;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:117:0,117:0:0:117:4244:-382.089,-35.2205,0
+Chromosome	781395	.	T	C	4124.01	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=124;CIGAR=1X;DP=125;DPB=125;DPRA=0;EPP=3.64073;EPPR=0;GTI=0;LEN=1;MEANALT=2;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=176.506;PAIRED=1;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=4622;QR=0;RO=0;RPL=63;RPP=3.08035;RPPR=0;RPR=61;RUN=1;SAF=64;SAP=3.29049;SAR=60;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:125:0,124:0:0:124:4622:-415.936,-37.3277,0
+Chromosome	1303116	.	C	T	5102.96	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=155;CIGAR=1X;DP=155;DPB=155;DPRA=0;EPP=20.1719;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=219.481;PAIRED=0.993548;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5732;QR=0;RO=0;RPL=70;RPP=6.16244;RPPR=0;RPR=85;RUN=1;SAF=78;SAP=3.02431;SAR=77;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:155:0,155:0:0:155:5732:-515.913,-46.6597,0
+Chromosome	1471659	.	C	T	2997.19	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=90;CIGAR=1X;DP=90;DPB=90;DPRA=0;EPP=3.0103;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=129.372;PAIRED=0.988889;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=3366;QR=0;RO=0;RPL=46;RPP=3.10681;RPPR=0;RPR=44;RUN=1;SAF=49;SAP=4.55446;SAR=41;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:90:0,90:0:0:90:3366:-303.111,-27.0927,0
+Chromosome	1917972	.	A	G	4925.32	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=148;CIGAR=1X;DP=148;DPB=148;DPRA=0;EPP=6.76636;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=209.777;PAIRED=0.993243;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5531;QR=0;RO=0;RPL=77;RPP=3.5385;RPPR=0;RPR=71;RUN=1;SAF=89;SAP=16.2152;SAR=59;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:148:0,148:0:0:148:5531:-497.83,-44.5524,0
+Chromosome	2223293	.	T	C	4720.24	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=144;CIGAR=1X;DP=145;DPB=145;DPRA=0;EPP=6.8707;EPPR=5.18177;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=198.576;PAIRED=0.993056;PAIREDR=1;PAO=0;PQA=0;PQR=0;PRO=0;QA=5303;QR=18;RO=1;RPL=81;RPP=7.89611;RPPR=5.18177;RPR=63;RUN=1;SAF=73;SAP=3.07062;SAR=71;SRF=1;SRP=5.18177;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:145:1,144:1:18:144:5303:-475.531,-41.8494,0
+Chromosome	4242643	.	C	T	4904.36	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=148;CIGAR=1X;DP=148;DPB=148;DPRA=0;EPP=3.5385;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=209.777;PAIRED=1;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5497;QR=0;RO=0;RPL=69;RPP=4.47751;RPPR=0;RPR=79;RUN=1;SAF=84;SAP=8.87914;SAR=64;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:148:0,148:0:0:148:5497:-494.771,-44.5524,0
+Chromosome	4244732	.	G	C	4978.43	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=154;CIGAR=1X;DP=157;DPB=157;DPRA=0;EPP=3.23591;EPPR=9.52472;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=189.311;PAIRED=0.987013;PAIREDR=1;PAO=0;PQA=0;PQR=0;PRO=0;QA=5673;QR=110;RO=3;RPL=86;RPP=7.57885;RPPR=3.73412;RPR=68;RUN=1;SAF=71;SAP=5.04077;SAR=83;SRF=2;SRP=3.73412;SRR=1;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:157:3,154:3:110:154:5673:-500.344,-37.0012,0
+Chromosome	4249732	.	C	G	5384.23	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=162;CIGAR=1X;DP=162;DPB=162;DPRA=0;EPP=4.9405;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=229.185;PAIRED=0.987654;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=6032;QR=0;RO=0;RPL=70;RPP=9.49791;RPPR=0;RPR=92;RUN=1;SAF=79;SAP=3.22477;SAR=83;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:162:0,162:0:0:162:6032:-542.894,-48.7669,0
+Chromosome	4327828	.	C	T	5090.14	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=157;CIGAR=1X;DP=157;DPB=157;DPRA=0;EPP=3.13478;EPPR=0;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=0;NS=1;NUMALT=1;ODDS=222.253;PAIRED=0.987261;PAIREDR=0;PAO=0;PQA=0;PQR=0;PRO=0;QA=5713;QR=0;RO=0;RPL=90;RPP=10.3269;RPPR=0;RPR=67;RUN=1;SAF=91;SAP=11.6547;SAR=66;SRF=0;SRP=0;SRR=0;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:157:0,157:0:0:157:5713:-514.209,-47.2617,0
+Chromosome	4407590	.	C	T	5590.85	.	AB=0;ABP=0;AC=2;AF=1;AN=2;AO=172;CIGAR=1X;DP=174;DPB=174;DPRA=0;EPP=3.46479;EPPR=3.0103;GTI=0;LEN=1;MEANALT=1;MQM=60;MQMR=60;NS=1;NUMALT=1;ODDS=222.361;PAIRED=0.988372;PAIREDR=1;PAO=0;PQA=0;PQR=0;PRO=0;QA=6322;QR=76;RO=2;RPL=92;RPP=4.82828;RPPR=7.35324;RPR=80;RUN=1;SAF=85;SAP=3.0608;SAR=87;SRF=1;SRP=3.0103;SRR=1;TYPE=snp;technology.illumina=1	GT:DP:AD:RO:QR:AO:QA:GL	1/1:174:2,172:2:76:172:6322:-561.761,-45.1644,0
