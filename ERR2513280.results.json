@@ -1,0 +1,1018 @@
+{
+    "schema_version": "1.0.0",
+    "id": "ERR2513280",
+    "timestamp": "2025-08-01T01:10:02.535756",
+    "pipeline": {
+        "software_version": "6.6.5",
+        "db_version": {
+            "name": "tbdb",
+            "repo": "git@github.com:jodyphelan/tbdb.git",
+            "branch": "tbdb",
+            "commit": "3ed1cb99",
+            "status": "clean",
+            "author": "Jody Phelan",
+            "date": "Sun Feb 16 11:08:45 2025 +0100",
+            "db-schema-version": "2.0.0",
+            "tb-profiler-version": ">=6.6.0,<7.0.0"
+        },
+        "software": [
+            {
+                "process": "trimming",
+                "software": "trimmomatic",
+                "version": "0.39"
+            },
+            {
+                "process": "mapping",
+                "software": "bwa",
+                "version": "0.7.1"
+            },
+            {
+                "process": "variant_calling",
+                "software": "freebayes",
+                "version": "1.3.6"
+            },
+            {
+                "process": "long_variant_calling",
+                "software": "delly",
+                "version": "1.3.3"
+            },
+            {
+                "process": "depth_calculation",
+                "software": "samtools",
+                "version": "1.21"
+            }
+        ]
+    },
+    "notes": [],
+    "lineage": [
+        {
+            "fraction": 100.0,
+            "lineage": "lineage4",
+            "family": "Euro-American",
+            "rd": "None",
+            "support": [
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 206481,
+                    "target_allele_count": 124,
+                    "other_allele_count": 0,
+                    "all_allele_count": 124,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 498531,
+                    "target_allele_count": 132,
+                    "other_allele_count": 0,
+                    "all_allele_count": 132,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 546357,
+                    "target_allele_count": 157,
+                    "other_allele_count": 0,
+                    "all_allele_count": 157,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 599868,
+                    "target_allele_count": 169,
+                    "other_allele_count": 0,
+                    "all_allele_count": 169,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 662911,
+                    "target_allele_count": 155,
+                    "other_allele_count": 0,
+                    "all_allele_count": 155,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 931123,
+                    "target_allele_count": 150,
+                    "other_allele_count": 0,
+                    "all_allele_count": 150,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 1250340,
+                    "target_allele_count": 138,
+                    "other_allele_count": 0,
+                    "all_allele_count": 138,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 2825466,
+                    "target_allele_count": 147,
+                    "other_allele_count": 0,
+                    "all_allele_count": 147,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 2994187,
+                    "target_allele_count": 108,
+                    "other_allele_count": 0,
+                    "all_allele_count": 108,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4",
+                    "chrom": "Chromosome",
+                    "pos": 3830695,
+                    "target_allele_count": 140,
+                    "other_allele_count": 0,
+                    "all_allele_count": 140,
+                    "target_allele_percent": 100.0
+                }
+            ]
+        },
+        {
+            "fraction": 100.0,
+            "lineage": "lineage4.9",
+            "family": "Euro-American (H37Rv-like)",
+            "rd": "None",
+            "support": [
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 311613,
+                    "target_allele_count": 161,
+                    "other_allele_count": 0,
+                    "all_allele_count": 161,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 420008,
+                    "target_allele_count": 184,
+                    "other_allele_count": 0,
+                    "all_allele_count": 184,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 541201,
+                    "target_allele_count": 181,
+                    "other_allele_count": 0,
+                    "all_allele_count": 181,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 903913,
+                    "target_allele_count": 166,
+                    "other_allele_count": 0,
+                    "all_allele_count": 166,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 1396922,
+                    "target_allele_count": 155,
+                    "other_allele_count": 0,
+                    "all_allele_count": 155,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 1759252,
+                    "target_allele_count": 170,
+                    "other_allele_count": 0,
+                    "all_allele_count": 170,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 1907296,
+                    "target_allele_count": 188,
+                    "other_allele_count": 0,
+                    "all_allele_count": 188,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 2022868,
+                    "target_allele_count": 128,
+                    "other_allele_count": 0,
+                    "all_allele_count": 128,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 3367765,
+                    "target_allele_count": 153,
+                    "other_allele_count": 0,
+                    "all_allele_count": 153,
+                    "target_allele_percent": 100.0
+                },
+                {
+                    "id": "lineage4.9",
+                    "chrom": "Chromosome",
+                    "pos": 3823159,
+                    "target_allele_count": 148,
+                    "other_allele_count": 0,
+                    "all_allele_count": 148,
+                    "target_allele_percent": 100.0
+                }
+            ]
+        }
+    ],
+    "main_lineage": "lineage4",
+    "sub_lineage": "lineage4.9",
+    "spoligotype": null,
+    "drtype": "Sensitive",
+    "dr_variants": [],
+    "other_variants": [
+        {
+            "chrom": "Chromosome",
+            "pos": 7362,
+            "ref": "G",
+            "alt": "C",
+            "depth": 148,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 69,
+            "reverse_reads": 79,
+            "sv_len": null,
+            "gene_id": "Rv0006",
+            "gene_name": "gyrA",
+            "feature_id": "Rv0006",
+            "type": "missense_variant",
+            "change": "p.Glu21Gln",
+            "nucleotide_change": "c.61G>C",
+            "protein_change": "p.Glu21Gln",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "levofloxacin",
+                    "original_mutation": "p.Glu21Gln",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "moxifloxacin",
+                    "original_mutation": "p.Glu21Gln",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "Rv0006",
+                    "gene_name": "gyrA",
+                    "feature_id": "Rv0006",
+                    "type": "missense_variant",
+                    "nucleotide_change": "c.61G>C",
+                    "protein_change": "p.Glu21Gln",
+                    "sequence_hgvs": "Chromosome:g.7362G>C",
+                    "annotation": [
+                        {
+                            "type": "who_confidence",
+                            "drug": "levofloxacin",
+                            "original_mutation": "p.Glu21Gln",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        },
+                        {
+                            "type": "who_confidence",
+                            "drug": "moxifloxacin",
+                            "original_mutation": "p.Glu21Gln",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        }
+                    ]
+                }
+            ],
+            "locus_tag": "Rv0006",
+            "gene_associated_drugs": [
+                "levofloxacin",
+                "moxifloxacin"
+            ]
+        },
+        {
+            "chrom": "Chromosome",
+            "pos": 1471659,
+            "ref": "C",
+            "alt": "T",
+            "depth": 287,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 157,
+            "reverse_reads": 130,
+            "sv_len": null,
+            "gene_id": "EBG00000313325",
+            "gene_name": "rrs",
+            "feature_id": "EBG00000313325",
+            "type": "upstream_gene_variant",
+            "change": "n.-187C>T",
+            "nucleotide_change": "n.-187C>T",
+            "protein_change": "",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "amikacin",
+                    "confidence": "Uncertain significance",
+                    "comment": "Not found in WHO catalogue",
+                    "source": "",
+                    "original_mutation": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "capreomycin",
+                    "confidence": "Uncertain significance",
+                    "comment": "Not found in WHO catalogue",
+                    "source": "",
+                    "original_mutation": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "kanamycin",
+                    "confidence": "Uncertain significance",
+                    "comment": "Not found in WHO catalogue",
+                    "source": "",
+                    "original_mutation": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "streptomycin",
+                    "confidence": "Uncertain significance",
+                    "comment": "Not found in WHO catalogue",
+                    "source": "",
+                    "original_mutation": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "EBG00000313325",
+                    "gene_name": "rrs",
+                    "feature_id": "EBG00000313325",
+                    "type": "upstream_gene_variant",
+                    "nucleotide_change": "n.-187C>T",
+                    "protein_change": "",
+                    "sequence_hgvs": "Chromosome:g.1471659C>T",
+                    "annotation": []
+                }
+            ],
+            "locus_tag": "EBG00000313325",
+            "gene_associated_drugs": [
+                "amikacin",
+                "capreomycin",
+                "kanamycin",
+                "streptomycin"
+            ]
+        },
+        {
+            "chrom": "Chromosome",
+            "pos": 1917972,
+            "ref": "A",
+            "alt": "G",
+            "depth": 89,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 42,
+            "reverse_reads": 47,
+            "sv_len": null,
+            "gene_id": "Rv1694",
+            "gene_name": "tlyA",
+            "feature_id": "Rv1694",
+            "type": "synonymous_variant",
+            "change": "c.33A>G",
+            "nucleotide_change": "c.33A>G",
+            "protein_change": "p.Leu11Leu",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "capreomycin",
+                    "original_mutation": "c.33A>G",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "Rv1694",
+                    "gene_name": "tlyA",
+                    "feature_id": "Rv1694",
+                    "type": "synonymous_variant",
+                    "nucleotide_change": "c.33A>G",
+                    "protein_change": "p.Leu11Leu",
+                    "sequence_hgvs": "Chromosome:g.1917972A>G",
+                    "annotation": [
+                        {
+                            "type": "who_confidence",
+                            "drug": "capreomycin",
+                            "original_mutation": "c.33A>G",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        }
+                    ]
+                }
+            ],
+            "locus_tag": "Rv1694",
+            "gene_associated_drugs": [
+                "capreomycin"
+            ]
+        },
+        {
+            "chrom": "Chromosome",
+            "pos": 2987070,
+            "ref": "G",
+            "alt": "A",
+            "depth": 129,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 61,
+            "reverse_reads": 68,
+            "sv_len": null,
+            "gene_id": "Rv2671",
+            "gene_name": "ribD",
+            "feature_id": "Rv2671",
+            "type": "missense_variant",
+            "change": "p.Ala78Thr",
+            "nucleotide_change": "c.232G>A",
+            "protein_change": "p.Ala78Thr",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "para-aminosalicylic_acid",
+                    "confidence": "Uncertain significance",
+                    "comment": "Not found in WHO catalogue",
+                    "source": "",
+                    "original_mutation": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "Rv2671",
+                    "gene_name": "ribD",
+                    "feature_id": "Rv2671",
+                    "type": "missense_variant",
+                    "nucleotide_change": "c.232G>A",
+                    "protein_change": "p.Ala78Thr",
+                    "sequence_hgvs": "Chromosome:g.2987070G>A",
+                    "annotation": []
+                }
+            ],
+            "locus_tag": "Rv2671",
+            "gene_associated_drugs": [
+                "para-aminosalicylic_acid"
+            ]
+        },
+        {
+            "chrom": "Chromosome",
+            "pos": 3449713,
+            "ref": "G",
+            "alt": "A",
+            "depth": 108,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 64,
+            "reverse_reads": 44,
+            "sv_len": null,
+            "gene_id": "Rv3083",
+            "gene_name": "Rv3083",
+            "feature_id": "Rv3083",
+            "type": "missense_variant",
+            "change": "p.Ala404Thr",
+            "nucleotide_change": "c.1210G>A",
+            "protein_change": "p.Ala404Thr",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "ethionamide",
+                    "original_mutation": "p.Ala404Thr",
+                    "confidence": "Uncertain significance",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "Rv3083",
+                    "gene_name": "Rv3083",
+                    "feature_id": "Rv3083",
+                    "type": "missense_variant",
+                    "nucleotide_change": "c.1210G>A",
+                    "protein_change": "p.Ala404Thr",
+                    "sequence_hgvs": "Chromosome:g.3449713G>A",
+                    "annotation": [
+                        {
+                            "type": "who_confidence",
+                            "drug": "ethionamide",
+                            "original_mutation": "p.Ala404Thr",
+                            "confidence": "Uncertain significance",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        }
+                    ]
+                }
+            ],
+            "locus_tag": "Rv3083",
+            "gene_associated_drugs": [
+                "ethionamide"
+            ]
+        },
+        {
+            "chrom": "Chromosome",
+            "pos": 4338595,
+            "ref": "GC",
+            "alt": "G",
+            "depth": 159,
+            "freq": 1.0,
+            "sv": false,
+            "filter": "pass",
+            "forward_reads": 75,
+            "reverse_reads": 84,
+            "sv_len": null,
+            "gene_id": "Rv3862c",
+            "gene_name": "whiB6",
+            "feature_id": "Rv3862c",
+            "type": "upstream_gene_variant",
+            "change": "c.-75delG",
+            "nucleotide_change": "c.-75delG",
+            "protein_change": "",
+            "annotation": [
+                {
+                    "type": "who_confidence",
+                    "drug": "amikacin",
+                    "original_mutation": "c.-75delG",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "capreomycin",
+                    "original_mutation": "c.-75delG",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                },
+                {
+                    "type": "who_confidence",
+                    "drug": "kanamycin",
+                    "original_mutation": "c.-75delG",
+                    "confidence": "Not assoc w R",
+                    "source": "WHO catalogue v2",
+                    "comment": ""
+                }
+            ],
+            "consequences": [
+                {
+                    "gene_id": "Rv3862c",
+                    "gene_name": "whiB6",
+                    "feature_id": "Rv3862c",
+                    "type": "upstream_gene_variant",
+                    "nucleotide_change": "c.-75delG",
+                    "protein_change": "",
+                    "sequence_hgvs": "Chromosome:g.4338595GC>G",
+                    "annotation": [
+                        {
+                            "type": "who_confidence",
+                            "drug": "amikacin",
+                            "original_mutation": "c.-75delG",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        },
+                        {
+                            "type": "who_confidence",
+                            "drug": "capreomycin",
+                            "original_mutation": "c.-75delG",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        },
+                        {
+                            "type": "who_confidence",
+                            "drug": "kanamycin",
+                            "original_mutation": "c.-75delG",
+                            "confidence": "Not assoc w R",
+                            "source": "WHO catalogue v2",
+                            "comment": ""
+                        }
+                    ]
+                }
+            ],
+            "locus_tag": "Rv3862c",
+            "gene_associated_drugs": [
+                "amikacin",
+                "capreomycin",
+                "kanamycin"
+            ]
+        }
+    ],
+    "qc_fail_variants": [],
+    "qc": {
+        "percent_reads_mapped": 99.75,
+        "num_reads_mapped": 4239985,
+        "target_median_depth": 139.0,
+        "genome_median_depth": 134.0,
+        "target_qc": [
+            {
+                "target": "dnaA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 171.0
+            },
+            {
+                "target": "gyrB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 158.0
+            },
+            {
+                "target": "gyrA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 153.0
+            },
+            {
+                "target": "Rv0010c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 204.0
+            },
+            {
+                "target": "fgd1",
+                "percent_depth_pass": 100.0,
+                "median_depth": 136.0
+            },
+            {
+                "target": "mshA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 111.0
+            },
+            {
+                "target": "ccsA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 130.0
+            },
+            {
+                "target": "Rv0565c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 153.0
+            },
+            {
+                "target": "hadA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 164.0
+            },
+            {
+                "target": "nusG",
+                "percent_depth_pass": 100.0,
+                "median_depth": 155.0
+            },
+            {
+                "target": "mmaA3",
+                "percent_depth_pass": 100.0,
+                "median_depth": 160.0
+            },
+            {
+                "target": "rpoB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 146.0
+            },
+            {
+                "target": "rpoC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 137.0
+            },
+            {
+                "target": "mmpL5",
+                "percent_depth_pass": 100.0,
+                "median_depth": 142.0
+            },
+            {
+                "target": "mmpS5",
+                "percent_depth_pass": 100.0,
+                "median_depth": 151.0
+            },
+            {
+                "target": "mmpR5",
+                "percent_depth_pass": 100.0,
+                "median_depth": 155.0
+            },
+            {
+                "target": "rpsL",
+                "percent_depth_pass": 100.0,
+                "median_depth": 141.0
+            },
+            {
+                "target": "rplC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 136.0
+            },
+            {
+                "target": "Rv1129c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 143.0
+            },
+            {
+                "target": "fbiC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 130.0
+            },
+            {
+                "target": "sigE",
+                "percent_depth_pass": 100.0,
+                "median_depth": 148.0
+            },
+            {
+                "target": "Rv1258c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 121.0
+            },
+            {
+                "target": "embR",
+                "percent_depth_pass": 100.0,
+                "median_depth": 133.0
+            },
+            {
+                "target": "atpE",
+                "percent_depth_pass": 100.0,
+                "median_depth": 171.0
+            },
+            {
+                "target": "rrs",
+                "percent_depth_pass": 100.0,
+                "median_depth": 267.0
+            },
+            {
+                "target": "rrl",
+                "percent_depth_pass": 100.0,
+                "median_depth": 274.0
+            },
+            {
+                "target": "inhA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 151.0
+            },
+            {
+                "target": "rpsA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 153.0
+            },
+            {
+                "target": "tsnR",
+                "percent_depth_pass": 100.0,
+                "median_depth": 108.0
+            },
+            {
+                "target": "tlyA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 115.0
+            },
+            {
+                "target": "bacA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 161.0
+            },
+            {
+                "target": "ndh",
+                "percent_depth_pass": 100.0,
+                "median_depth": 143.0
+            },
+            {
+                "target": "katG",
+                "percent_depth_pass": 100.0,
+                "median_depth": 142.0
+            },
+            {
+                "target": "PPE35",
+                "percent_depth_pass": 100.0,
+                "median_depth": 172.0
+            },
+            {
+                "target": "Rv1979c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 170.0
+            },
+            {
+                "target": "pncA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 135.0
+            },
+            {
+                "target": "kasA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 127.0
+            },
+            {
+                "target": "eis",
+                "percent_depth_pass": 100.0,
+                "median_depth": 120.0
+            },
+            {
+                "target": "ahpC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 172.0
+            },
+            {
+                "target": "folC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 129.0
+            },
+            {
+                "target": "Rv2477c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 148.0
+            },
+            {
+                "target": "pepQ",
+                "percent_depth_pass": 100.0,
+                "median_depth": 128.0
+            },
+            {
+                "target": "ribD",
+                "percent_depth_pass": 100.0,
+                "median_depth": 116.0
+            },
+            {
+                "target": "Rv2680",
+                "percent_depth_pass": 100.0,
+                "median_depth": 116.0
+            },
+            {
+                "target": "Rv2681",
+                "percent_depth_pass": 100.0,
+                "median_depth": 119.0
+            },
+            {
+                "target": "Rv2752c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 139.0
+            },
+            {
+                "target": "thyX",
+                "percent_depth_pass": 100.0,
+                "median_depth": 127.0
+            },
+            {
+                "target": "thyA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 153.0
+            },
+            {
+                "target": "ald",
+                "percent_depth_pass": 100.0,
+                "median_depth": 142.0
+            },
+            {
+                "target": "fbiD",
+                "percent_depth_pass": 100.0,
+                "median_depth": 113.0
+            },
+            {
+                "target": "Rv3083",
+                "percent_depth_pass": 100.0,
+                "median_depth": 119.0
+            },
+            {
+                "target": "whiB7",
+                "percent_depth_pass": 100.0,
+                "median_depth": 145.0
+            },
+            {
+                "target": "Rv3236c",
+                "percent_depth_pass": 100.0,
+                "median_depth": 143.0
+            },
+            {
+                "target": "lpqB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 127.0
+            },
+            {
+                "target": "mtrB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 130.0
+            },
+            {
+                "target": "mtrA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 140.0
+            },
+            {
+                "target": "fbiA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 129.0
+            },
+            {
+                "target": "fbiB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 118.0
+            },
+            {
+                "target": "alr",
+                "percent_depth_pass": 100.0,
+                "median_depth": 132.0
+            },
+            {
+                "target": "rpoA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 136.0
+            },
+            {
+                "target": "ddn",
+                "percent_depth_pass": 100.0,
+                "median_depth": 140.0
+            },
+            {
+                "target": "clpC1",
+                "percent_depth_pass": 100.0,
+                "median_depth": 151.0
+            },
+            {
+                "target": "panD",
+                "percent_depth_pass": 100.0,
+                "median_depth": 118.0
+            },
+            {
+                "target": "glpK",
+                "percent_depth_pass": 100.0,
+                "median_depth": 134.0
+            },
+            {
+                "target": "embC",
+                "percent_depth_pass": 100.0,
+                "median_depth": 118.0
+            },
+            {
+                "target": "embA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 130.0
+            },
+            {
+                "target": "embB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 125.0
+            },
+            {
+                "target": "aftB",
+                "percent_depth_pass": 100.0,
+                "median_depth": 136.0
+            },
+            {
+                "target": "ubiA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 132.0
+            },
+            {
+                "target": "ethA",
+                "percent_depth_pass": 100.0,
+                "median_depth": 147.0
+            },
+            {
+                "target": "ethR",
+                "percent_depth_pass": 100.0,
+                "median_depth": 124.0
+            },
+            {
+                "target": "whiB6",
+                "percent_depth_pass": 99.87,
+                "median_depth": 156.0
+            },
+            {
+                "target": "gid",
+                "percent_depth_pass": 100.0,
+                "median_depth": 132.0
+            }
+        ],
+        "missing_positions": []
+    },
+    "linked_samples": []
+}
