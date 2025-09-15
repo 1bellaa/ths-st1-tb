@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Chromosome_4139821_T_G <= 0.5\nsamples = 100.0%\nvalue = [0.561, 0.439]", fillcolor="#f9e4d4"] ;
+1 [label="Chromosome_7582_A_C <= 0.5\nsamples = 94.4%\nvalue = [0.603, 0.397]", fillcolor="#f6d4bb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Chromosome_777451_C_G <= 0.5\nsamples = 91.0%\nvalue = [0.629, 0.371]", fillcolor="#f4cbae"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+102 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 102 ;
+103 [label="samples = 3.4%\nvalue = [0.0, 1.0]", fillcolor="#399de5"] ;
+1 -> 103 ;
+104 [label="Chromosome_4237966_A_C <= 0.5\nsamples = 5.6%\nvalue = [0.091, 0.909]", fillcolor="#4da7e8"] ;
+0 -> 104 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+105 [label="samples = 4.5%\nvalue = [0.0, 1.0]", fillcolor="#399de5"] ;
+104 -> 105 ;
+106 [label="samples = 1.1%\nvalue = [1.0, 0.0]", fillcolor="#e58139"] ;
+104 -> 106 ;
+}
